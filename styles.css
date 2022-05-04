@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(205,222,235,1) 90%);
+}
+
+h1 {
+  font-family: Courier, monospace;
+}
+
+img {
+  margin: 50px 0px 0px 0px;
+  max-width: max(20%, 200px);
+  height: auto;
+  border-radius: 50%;
+}
+
+.progress-bar {
+  width: max(20%, 100px);
+  height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  background: white;
+  border-radius: 15px;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background: #78d581;
+  border-radius: 10px;
+  animation: fill 5s ease infinite;
+}
+
+@keyframes fill {
+  0% {
+    width: 7%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 8%;
+  }
+}
